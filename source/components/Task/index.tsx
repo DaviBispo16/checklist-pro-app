@@ -7,7 +7,7 @@ export function Task() {
             <TaskDone>
                 <Feather name='circle' size={30} color='#0A0A0A'> </Feather>
             </TaskDone>
-            <TaskText>Task</TaskText>
+            <TaskText>Nada</TaskText>
             <TaskDelete>
                 <Feather name='trash-2' size={26} color='#0A0A0A'> </Feather>
             </TaskDelete>

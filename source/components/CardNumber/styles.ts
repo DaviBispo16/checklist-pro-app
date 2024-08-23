@@ -1,13 +1,13 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    padding: 9px;
+    background-color: aliceblue;
+    padding: 6px;
     flex-direction: column;
     align-items: center;
-    background-color: '#77B9F2';
-    border-radius: 4px;
+    border-radius: 14px;
     overflow: hidden;
-    gap: 8px,
+
 `;
 
 export const CardTitle = styled.Text`

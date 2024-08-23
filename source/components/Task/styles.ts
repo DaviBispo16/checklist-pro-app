@@ -4,7 +4,7 @@ export const Container = styled.TouchableOpacity`
     width: 100%;
     height: 56px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #FAFAF9;
     overflow: hidden;
@@ -14,6 +14,7 @@ export const TaskText = styled.Text`
     color: #0A0A0A;
     font-size: 16px;
     font-weight: 500;
+    padding-right: 10px;
 `;
 
 export const TaskDone = styled.TouchableOpacity`

@@ -4,7 +4,8 @@ export function CardNumber() {
     return(
        <Container>
             <CardTitle>Tasks</CardTitle>
-            <CardTitle>4</CardTitle>
+            <CardValue>4</CardValue>
        </Container>
+       
     )
 }
