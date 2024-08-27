@@ -1,11 +1,19 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.View`
+    padding-top: 10px;
     width: 100%;
-    height: 56px;
+    height: 60px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+`
+
+export const Buttom = styled.TouchableOpacity`
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
     background-color: #FAFAF9;
     overflow: hidden;
 `;
@@ -15,22 +23,18 @@ export const TaskText = styled.Text`
     font-size: 16px;
     font-weight: 500;
     padding-right: 10px;
+    text-align: center;
 `;
 
 export const TaskDone = styled.TouchableOpacity`
-    width: 76px;
-    height: 56px;
-    background-color: #FAFAF9;
-    justify-content: center;
-    align-items: center;
+    
 `;
 
 export const TaskDelete = styled.TouchableOpacity`
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     background-color: #F22929;
     justify-content: center;
     align-items: center;
-    padding-left: 7px;
-
+    padding-left: 8px;
 `
