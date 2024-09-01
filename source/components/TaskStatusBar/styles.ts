@@ -1,11 +1,20 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    flex-direction: row;
-    padding-top: 6px;
-    gap: 18px;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 110px;
+    background-color: #77B9F2;
+    justify-content: flex-end;
+    padding: 12px;
+`
+
+export const GreentingsContainer = styled.View`
+    align-items: flex-start;
+` 
+export const GreetingsText = styled.Text`
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
 `
 
 export const Card = styled.View`

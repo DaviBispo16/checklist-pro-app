@@ -9,7 +9,7 @@ export function Task() {
             <TaskText>Task</TaskText>
             
             <TaskDelete>
-                <Feather name='trash-2' size={26} color='#0A0A0A'> </Feather>
+                <Feather name='file-minus' size={26} color='#0A0A0A'> </Feather>
             </TaskDelete>
             </Buttom>
         </Container>

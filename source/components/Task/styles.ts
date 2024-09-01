@@ -33,7 +33,6 @@ export const TaskDone = styled.TouchableOpacity`
 export const TaskDelete = styled.TouchableOpacity`
     width: 48px;
     height: 48px;
-    background-color: #F22929;
     justify-content: center;
     align-items: center;
     padding-left: 8px;

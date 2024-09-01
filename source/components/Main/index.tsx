@@ -31,8 +31,8 @@ export function Main() {
 
       return (
             <SafeAreaView>
-                <InputAddTask onChangeText={setTaskText} value={taskTask} handleTaskAdd={handleTaskAdd}/>
                 <TaskStatusBar taskCount={taskCount}/>
+                <InputAddTask onChangeText={setTaskText} value={taskTask} handleTaskAdd={handleTaskAdd}/>
                 <FlatList data={tasks} keyExtractor={(item, index) => index.toString()} 
                 renderItem={({item}) => (<Task/>)}
                 ListEmptyComponent={() => {
