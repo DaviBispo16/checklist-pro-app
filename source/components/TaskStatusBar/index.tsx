@@ -1,7 +1,9 @@
 import {Container, Card, CardTitle, CardValue, TaskCountContainer, TaskCountText, GreentingsContainer, GreetingsText} from './styles'
 import { View } from 'react-native'
 
-export function TaskStatusBar({taskCount}) {
+
+
+export function TaskStatusBar() {
     return(
         <Container>
             <GreentingsContainer>

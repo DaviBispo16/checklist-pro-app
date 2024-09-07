@@ -1,8 +1,14 @@
 import {Feather} from '@expo/vector-icons'
-import {InputContainer, InputText, InputButtom, Input} from './styles'
+import {InputContainer, InputText, InputButtom} from './styles'
 import { View } from 'react-native'
 
-export function InputAddTask({onChangeText, value, handleTaskAdd}) {
+type Props = {
+    onChangeText: (text:string) => void,
+    value: string,
+    handleTaskAdd: () => void;
+}
+
+export function InputAddTask({onChangeText, value, handleTaskAdd}: Props) {
     return(
         <InputContainer>
             <InputText placeholder='Search' placeholderTextColor='black' keyboardType='default' 

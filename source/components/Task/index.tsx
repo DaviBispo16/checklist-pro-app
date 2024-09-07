@@ -1,17 +1,25 @@
 import {Feather} from '@expo/vector-icons'
 
-import {Container, TaskText, TaskDone, TaskDelete, Buttom} from './styles'
-export function Task() {
+import {Container, TaskText, TaskDone, TasksInfo, ContainerText} from './styles'
+
+type Props = {
+    title: string,
+    status: boolean,
+    onCheck?: () => void;
+}
+
+export function Task({title, onCheck, status}: Props) {
     return(
         <Container>
-            <Buttom>
-                <Feather name='circle' size={36} color='#0A0A0A'> </Feather>
-            <TaskText>Task</TaskText>
-            
-            <TaskDelete>
-                <Feather name='file-minus' size={26} color='#0A0A0A'> </Feather>
-            </TaskDelete>
-            </Buttom>
+                <TaskDone onPress={onCheck}>
+                    <Feather name={ status ? 'check-circle' : 'circle'} size={38} color='#0A0A0A' style={{alignItems: 'flex-end'}}> </Feather>
+                </TaskDone>
+                    <ContainerText>
+                    <TaskText>{title}</TaskText>
+                    </ContainerText>
+                <TasksInfo>
+                    <Feather name='file-minus' size={32} color='#0A0A0A'> </Feather>
+                </TasksInfo>
         </Container>
     );
 }

@@ -1,36 +1,36 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    padding-top: 10px;
+    background-color: #e2e8f0;
     width: 100%;
     height: 60px;
+    padding: 12px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    align-content: center;
+    justify-content: space-between
 `
 
-export const Buttom = styled.TouchableOpacity`
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    background-color: #FAFAF9;
-    overflow: hidden;
-`;
+export const ContainerText = styled.View`
+
+`
 
 export const TaskText = styled.Text`
     color: #0A0A0A;
     font-size: 16px;
     font-weight: 500;
     padding-right: 10px;
-    text-align: center;
+    justify-content: center;
 `;
 
 export const TaskDone = styled.TouchableOpacity`
-    
+
 `;
 
-export const TaskDelete = styled.TouchableOpacity`
+export const TasksInfo = styled.TouchableOpacity`
     width: 48px;
     height: 48px;
     justify-content: center;

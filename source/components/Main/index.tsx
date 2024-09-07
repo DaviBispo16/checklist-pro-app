@@ -1,10 +1,10 @@
-import { Container, ListEmpty, ListEmptyText} from "./styles";
 import { useState, useEffect} from "react";
-import { Alert } from "react-native";
+import { Alert, View } from "react-native";
 import { SafeAreaView, FlatList} from "react-native";
 import { InputAddTask } from '../InputAddTask';
 import { TaskStatusBar } from "../TaskStatusBar";
 import { Task } from "../Task";
+import { Container, ListEmpty, ListEmptyText} from "./styles";
 
 export function Main() {
     const [tasks, setTasks] = useState<{description: string, check: boolean}[]>([]);
@@ -29,12 +29,24 @@ export function Main() {
         setTaskCount(tasks.length);
       }, [tasks]);
 
+      const toggleCheck = (index: number) => {
+        setTasks(prevTasks => {
+            const newTasks = [...prevTasks];
+            newTasks[index].check = !newTasks[index].check;
+            return newTasks; 
+        });
+    };
+
       return (
             <SafeAreaView>
-                <TaskStatusBar taskCount={taskCount}/>
-                <InputAddTask onChangeText={setTaskText} value={taskTask} handleTaskAdd={handleTaskAdd}/>
+                <TaskStatusBar/>
+                <InputAddTask onChangeText={setTaskText} value={taskTask} 
+                handleTaskAdd={handleTaskAdd}/>
+                <View style={{alignItems: 'center'}}>
+                
                 <FlatList data={tasks} keyExtractor={(item, index) => index.toString()} 
-                renderItem={({item}) => (<Task/>)}
+                renderItem={({item, index}) => (<Task title={item.description} 
+                status={item.check} onCheck={() => toggleCheck(index)}/>)}
                 ListEmptyComponent={() => {
                     return (
                         <ListEmpty>
@@ -44,6 +56,8 @@ export function Main() {
                 }}
                 >
                 </FlatList>
+
+                </View>
             </SafeAreaView>
       );
 
