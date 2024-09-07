@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    background-color: #e2e8f0;
+    background-color: #d4d4d4;
     width: 100%;
     height: 60px;
     padding: 12px;

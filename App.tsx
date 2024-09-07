@@ -1,20 +1,22 @@
-import { FlatList, StyleSheet, Text, View, SafeAreaView} from 'react-native';
-import { Main } from './source/components/Main';
-import { StatusBar } from 'expo-status-bar';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Details from './source/screens/Details/index'
+import Home from './source/screens/Home';
 
 export default function App() {
 
+  const Stack = createNativeStackNavigator();
+
   return (
-     <View style={styles.container}>
-        <Main/>
-        <StatusBar style='dark'/>
-     </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown: false}}>
+        <Stack.Screen name='Home' component={Home}/>
+        <Stack.Screen name='Details' component={Details}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+    
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FAFAF9',
-  },
-});

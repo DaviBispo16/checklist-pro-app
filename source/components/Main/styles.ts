@@ -1,8 +1,5 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
-`
-
 export const ListEmpty = styled.View`
     padding: 40px;
     align-items: center;
