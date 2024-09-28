@@ -5,7 +5,6 @@ export const ListEmpty = styled.View`
     align-items: center;
 
 `
-
 export const ListEmptyText = styled.Text`
     font-size: 16px;
     font-weight: bold;
