@@ -35,7 +35,6 @@ export default function Details(){
         }
     }
 
-
     return (
         <Container>
             <SafeAreaView>
@@ -54,20 +53,10 @@ export default function Details(){
                 </BlockTitleAndSubtitle>
                 
                 <BlockTitleAndSubtitle>
-                    <TitleDetails>Created in</TitleDetails>
-                    <SubtitleDetails>text</SubtitleDetails>
-                </BlockTitleAndSubtitle>
-
-                <BlockTitleAndSubtitle>
                     <TitleDetails>Status</TitleDetails>
                     <SubtitleDetails>
                         <Feather name={task.status ? 'check-circle' : 'x-circle'} size={27} color={task.status ? 'green' : 'red'}/>
                     </SubtitleDetails>
-                </BlockTitleAndSubtitle>
-
-                <BlockTitleAndSubtitle>
-                    <TitleDetails>Notes</TitleDetails>
-                    <SubtitleDetails>text</SubtitleDetails>
                 </BlockTitleAndSubtitle>
             </ContainerContent>
         

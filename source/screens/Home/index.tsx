@@ -4,7 +4,7 @@ import { SafeAreaView, FlatList} from "react-native";
 import { InputAddTask } from "../../components/InputAddTask";
 import { TaskStatusBar } from "../../components/TaskStatusBar";
 import { Task } from "../../components/Task";
-import { ListEmpty, ListEmptyText } from "./styles";
+import { Container, ListEmpty, ListEmptyText } from "./styles";
 import { TaskContext } from "../../context/TaskContext";
 import { TaskProps } from "../../utils/types";
 import { Formik } from "formik";
@@ -42,8 +42,8 @@ export default function Home() {
 
       return (
             <SafeAreaView>
+              <Container>
                 <TaskStatusBar/>
-                
                 <Formik
                   initialValues={{taskText: ""}}
                   validationSchema={TaskSchema}
@@ -63,10 +63,10 @@ export default function Home() {
                 handleSubmit();
                 }
               };
-
+              
                   
               return (
-                  <View>
+                <View>
                     <InputAddTask 
                     onChangeText={handleChange('taskText')} 
                     handleTaskAdd={handleSubmitWrapper}
@@ -75,7 +75,7 @@ export default function Home() {
                     />
 
                     {touched.taskText && errors.taskText && (
-                      <Text style={{color: '#b91c1c'}}>{errors.taskText}</Text>
+                      <Text>{errors.taskText}</Text>
                     )}
                   </View>
                   )}}
@@ -98,6 +98,7 @@ export default function Home() {
                 >
                 </FlatList>
                 </View>
+            </Container>
             </SafeAreaView>
       );
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    background-color: #d4d4d4;
+    background-color: #77B9F2;
     width: 100%;
     height: 60px;
     padding: 12px;
@@ -11,11 +11,7 @@ export const Container = styled.View`
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-between
-`
-
-export const ContainerText = styled.View`
-
+    justify-content: space-between;
 `
 
 export const TaskText = styled.Text`
@@ -27,7 +23,7 @@ export const TaskText = styled.Text`
 `;
 
 export const TaskDone = styled.TouchableOpacity`
-
+    
 `;
 
 export const TasksInfo = styled.TouchableOpacity`

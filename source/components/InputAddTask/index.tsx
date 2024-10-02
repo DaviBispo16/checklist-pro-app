@@ -19,7 +19,7 @@ export function InputAddTask({onChangeText, onBlur ,handleTaskAdd, value}: Props
             value={value}
             />
             <InputButtom onPress={handleTaskAdd}>
-                <Feather name='plus-circle' size={60} color='#77B9F2'></Feather>
+                <Feather name='plus-square' size={60} color='#77B9F2'></Feather>
             </InputButtom>
         </InputContainer>
     )

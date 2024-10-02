@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
     width: 100%;
-    height: 110px;
-    background-color: #77B9F2;
+    height: 75px;
+    background-color: #FAFAF9;
     justify-content: flex-end;
     padding: 12px;
 `
@@ -12,7 +12,7 @@ export const GreentingsContainer = styled.View`
     align-items: flex-start;
 ` 
 export const GreetingsText = styled.Text`
-    color: #fff;
+    color: #000;
     font-size: 26px;
     font-weight: bold;
 `

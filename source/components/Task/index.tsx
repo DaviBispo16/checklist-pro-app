@@ -1,5 +1,5 @@
 import {Feather} from '@expo/vector-icons'
-import {Container, TaskText, TaskDone, TasksInfo, ContainerText} from './styles'
+import {Container, TaskText, TaskDone, TasksInfo} from './styles'
 import { TaskProps, RootStackParamList} from '../../utils/types';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useContext, useState } from 'react';
@@ -23,9 +23,7 @@ export function Task(props: TaskProps) {
                 <TaskDone onPress={props.onCheck}>
                     <Feather name={ props.status ? 'check-circle' : 'circle'} size={38} color={props.status ? 'green' : 'red'} style={{alignItems: 'flex-end'}}> </Feather>
                 </TaskDone>
-                    <ContainerText>
                     <TaskText>{props.title}</TaskText>
-                    </ContainerText>
                 <TasksInfo onPress={() => handlePress()}>
                     <Feather name='file-minus' size={32} color='#000'> </Feather>
                 </TasksInfo>

@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     flex: 1;
-    background-color: #F1F1F1;
+    background-color: #F1F1F9;
     gap: 16px;
     padding: 10px;
 `
@@ -13,11 +13,11 @@ export const ContainerHeader = styled.View`
 `
 
 export const ContainerContent = styled.View`
-    gap: 20px
+    gap: 20px;
 `
 
 export const BlockTitleAndSubtitle = styled.View`
-    gap: 5px
+    gap: 5px;
 `
 
 export const ContainerTitle = styled.Text`
@@ -62,7 +62,7 @@ export const TextButtonDelete = styled.Text`
     font-weight: bold;
 `
 export const ContainerModal = styled.View`
-    background-color: #a1a1aa;
+    background-color: #77B9F2;
     width: 100%;
     height: 200px;
     position: absolute;
@@ -95,25 +95,30 @@ export const ContainerButtoms = styled.View`
 `
 
 export const ButtonCancel = styled.TouchableOpacity`
-    background-color: #22d3ee;
-    border-radius: 10px;
-    width: 90px;
+    background-color: #FFF;
+    width: 120px;
+    height: 35px;
+    justify-content: center;
+    border-radius: 5px;
 `
 
 export const ButtonDeletion = styled.TouchableOpacity`
     background-color: #b91c1c;
-    border-radius: 10px;
-    width: 90px;
+    width: 120px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 `
 
 export const TextCancel = styled.Text`
+    text-align: center;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
 `
 
 export const TextDeletion = styled.Text`
+    text-align: center;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
 `

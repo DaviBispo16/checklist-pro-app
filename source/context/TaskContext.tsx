@@ -3,6 +3,7 @@ import { TaskProps } from "../utils/types";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
 
+
 interface TaskContextProps {
     task: TaskProps;
     tasks: TaskProps[];
@@ -46,7 +47,7 @@ function TaskProvider({children}: TaskProviderPros) {
         const newTask = {
             id: tasks.length+1,
             title: title,
-            status: false
+            status: false,
         }
         setTasks([...tasks, newTask]);
       };
