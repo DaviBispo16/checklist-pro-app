@@ -48,7 +48,7 @@ yarn install
 
 ### 3. Iniciando o Expo
 ```bash
-expo start
+npx expo start
 ```
 
 Use o aplicativo Expo Go para escanear o código QR e rodar o app em seu dispositivo, ou escolha abrir no emulador Android ou iOS.
